@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+/*
+    検索　ここから
+ *  */
+
+Route::get('q', function () {
+    return view('index');
+});
+
+
+/*
+    検索　ここまで
+ *  */
