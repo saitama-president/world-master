@@ -11,17 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
+Route::get('/',"searchController@index");
 /*
     検索　ここから
  *  */
-
-Route::get('q', function () {
-    return view('index');
-});
+Route::get('search',"searchController@search");
 
 
 /*

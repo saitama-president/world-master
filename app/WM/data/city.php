@@ -10,6 +10,8 @@ class city extends Model implements \App\Common\ICreateTable
     //
     public static function CreateTable(\Illuminate\Database\Schema\Blueprint $table) {
             $table->increments('id');
+            $table->string('code',64);            
+            $table->unique(["code"]);
             $table->timestamps();
     }
 

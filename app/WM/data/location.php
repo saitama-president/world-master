@@ -4,10 +4,11 @@ namespace App\WM\data;
 
 use Illuminate\Database\Eloquent\Model;
 
-class person extends Model implements \App\Common\ICreateTable
+class location extends Model implements \App\Common\ICreateTable
 {
-    public $table="person";
-    //
+    public $table="location";
+    
+    
     public static function CreateTable(\Illuminate\Database\Schema\Blueprint $table) {
             $table->increments('id');
             $table->string('code',64);            
@@ -19,5 +20,4 @@ class person extends Model implements \App\Common\ICreateTable
     public static function InitTable(\Illuminate\Database\Query\Builder $table) {
         
     }
-
 }
